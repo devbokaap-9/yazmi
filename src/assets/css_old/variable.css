@@ -1,0 +1,37 @@
+:root {
+    --bg_green: #00643B;
+    --bg_tab_active: #FFC122;
+    --bg_tab: #D9E8E2;
+    --sidenavbar_color: #666666;
+
+    /* scrooll bar */
+    --scroll_bg: #EAE8EF;
+    --scroll_clr: #C9C8CD;;
+
+    /* font family */
+    --Segoe:                    "Segoe";
+    --Segoe_UI:                 "Segoe_UI";
+    --Segoe_UI_BoldItalic:      "Segoe_UI_BoldItalic";
+    --Segoe_UI_Italic:          "Segoe_UI_Italic";
+    --Segoe_UI_Bold:            "Segoe_UI_Bold";
+
+    /* Poppins font */
+    --Poppins_Regular:          "Poppins_Regular";
+    --Poppins_100:              "Poppins_100";
+    --Poppins_bold:             "Poppins_bold"; 
+    --Poppins_200:              "Poppins_200"; 
+    --Poppins_300:              "Poppins_300"; 
+    --Poppins_500:              "Poppins_500"; 
+    --Poppins_SemiBold:         "Poppins_SemiBold"; 
+    --Poppins_Black_900:        "Poppins_Black_900"; 
+    --Poppins_ExtraBold:        "Poppins_ExtraBold"; 
+    --Poppins_italic:           "Poppins_italic"; 
+    --Poppins_itanic_100:       "Poppins_itanic_100";  
+    --Poppins_italic_200:       "Poppins_italic_200"; 
+    --Poppins_italic_300:       "Poppins_italic_300"; 
+    --Poppins_italic_500:       "Poppins_italic_500"; 
+    --Poppins_italic_bold:      "Poppins_italic_bold"; 
+    --Poppins_italic_900:       "Poppins_italic_900";
+    --Poppins_Extrabold_italic: "Poppins_Extrabold_italic"; 
+    --Poppins_semiBold_italic:  "Poppins_semiBold_italic"; 
+}

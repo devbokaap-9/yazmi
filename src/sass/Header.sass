@@ -1,0 +1,164 @@
+header
+    background: $bg_green
+    height: 60px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-left: 16px
+    padding-right: 16px
+    .right_content
+        img
+            width: 51.97px
+            border-radius: 50%
+        p
+            margin-left: 11px
+            line-height: 23px
+            font-family: $Segoe_UI
+            font-weight: 600
+            color: #FFFFFF
+            font-size: 17px
+            span
+               margin-left: 15.03px
+        .right_content_div
+            // border-right: 1px solid rgba(255, 255, 255, 0.2)
+            margin-right: 23px
+            .input_div
+                opacity: 
+                width: 284px
+                height: 40px
+                border-radius: 5px
+                background: rgba(255, 255, 255, 0.2)
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding: 8px 16px
+                font-family: $Segoe_UI
+                font-size: 16px
+                line-height: 21px
+                input
+                    width: 90%
+                    border: none
+                    color: #ffffff
+                    background: transparent
+                ::-webkit-input-placeholder
+                    color: white
+            // .select_div
+            //     height: 40px
+            //     background: rgba(255, 255, 255, 0.2)
+            //     display: flex
+            //     // justify-content: center
+            //     width: 83px
+            //     margin-left: 12px
+            //     border-radius: 6px
+            //     select
+            //         padding: 8px 15px
+            //         background: transparent
+            //         border: none
+            //         color: white
+            .icon_div
+                padding-left: 25px
+                padding-right: 23px
+                .email_icon
+                    margin-right: 12px
+        .profile_image
+            width: 40px
+            height: 40px
+            background: #ffffff
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            color: $bg_green
+            font-family: $Segoe_UI_Bold
+            letter-spacing: 1px
+        
+.user_profile
+    .popover-body
+        padding: 0px !important
+        border-radius: 4px 4px 0px 0px !important
+        border: none !important
+        overflow: hidden !important
+        ul
+            li
+                width: 135px
+                a
+                    color: #252525 !important
+                    font-family: $Segoe_UI !important
+                    font-style: normal !important
+                    font-weight: 600 !important
+                    font-size: 14px !important
+                    line-height: 40px !important
+                    padding: 0px 14px !important
+                &:hover
+                    background: #D9E8E2 !important
+    .bs-popover-auto
+        top: 3px !important
+    .squar_box
+        width: 10px
+        height: 10px
+        background: #ffffff
+        transform: rotate(45deg)
+        position: absolute
+        top: -5px
+        left: 109px
+.first_li
+    position: relative
+    z-index: 1
+    &:hover
+        .user_profile
+            .squar_box
+                background: #D9E8E2 !important
+@media screen and (min-width: 1000px)
+    header
+        padding-left: 60px
+        padding-right: 60px
+    .user_profile .bs-popover-auto
+        top: 9px !important
+        left: -48px !important
+@media screen and (max-width: 1200px)
+    header
+        .right_content
+            .right_content_div
+                margin-right: 10px
+                .input_div
+                    // width: 50%
+@media screen and (max-width: 900px)
+    header
+        .right_content
+            .right_content_div
+                margin-right: 10px
+                .input_div
+                    width: 150px
+                .icon_div
+                        padding-left: 10px
+                        padding-right: 10px
+
+@media screen and (max-width: 800px)
+    header
+        .right_content
+            .right_content_div
+                margin-right: 10px
+                .input_div
+                    // width: 0px
+                    // background: transparent
+                    input
+                        // display: none
+@media screen and (max-width: 500px)
+    header
+        .left_content
+            a
+                img
+                    width: 50px
+        .right_content
+            .right_content_div
+                .input_div
+                    width: 120px
+
+
+
+
+
+
+
+
+        

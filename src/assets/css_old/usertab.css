@@ -1,0 +1,101 @@
+.UserSidebar ul li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.UserSidebar ul li .Link_text {
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+.UserSidebar ul li .Link_text .users_box {
+    height: 100%;
+    padding: 9px 19px;
+    justify-content: space-between;
+}
+.UserSidebar ul li .Link_text .users_box p {
+    font-family: var(--Segoe_UI);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+    color: #252525;
+}
+.UserSidebar ul li .Link_text .users_box .dropdown {
+    /* display: none; */
+    width: 100%;
+    padding-left: 30px;
+}
+.UserSidebar ul li .Link_text .users_box .dropdown ul li a {
+    color: var(--sidenavbar_color);
+    font-family: var(--Segoe_UI);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 31px;
+    display: flex;
+}
+.UserSidebar ul li .Link_text .users_box .dropdown ul li a span {
+    margin-right: 7px;
+}
+.UserSidebar ul li .Link_text .users_box .dropdown ul li a .three_dots {
+    margin-right: 0px;
+    margin-left: auto;
+}
+.UserSidebar ul li .bi-three-dots{
+    color: var(--sidenavbar_color);
+}
+.UserSidebar ul li a.users_box_active {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+.UserSidebar ul li .users_box_active .users_box .dropdown {
+    display: block;
+}
+/* .UserSidebar ul li a.users_box_active_static {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1) !important;
+} */
+.add_user .popover-body {
+    padding: 0px !important;
+    border-radius: 4px 4px 0px 0px !important;
+    border: none !important;
+    overflow: hidden !important;
+    width: 157px !important;
+}
+.add_user .popover-body ul li a {
+    color: #252525 !important;
+    font-family: var(--Segoe_UI) !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 40px !important;
+    padding: 0px 14px !important;
+}
+.add_user .popover-body ul li:hover {
+    background: #D9E8E2 !important;
+}
+.add_user .bs-popover-auto {
+    top: 9px !important;
+    left: 113px !important;
+}
+.add_user .squar_box {
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    transform: rotate(46deg);
+    position: absolute;
+    top: -6px;
+    left: 18px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+.adduser_popup {
+    background: #ffffff;
+    border: 1px solid black;
+    z-index: 6;
+    position: absolute;
+    top: 41%;
+    right: 0;
+    left: 179px;
+    width: 200px;
+}

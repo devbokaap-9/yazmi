@@ -1,0 +1,636 @@
+.user_questions_tab
+    margin-top: 18px
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+    // .row
+    //     padding: 0px -15px !important
+    .nav-pills
+        justify-content: space-between
+        .nav-item
+            width: 49.50%
+            text-align: center
+            height: 44px
+            .nav-link
+                padding: 12px
+                background: #E5EFEB
+                color:#00643B
+                font-family: $Segoe_UI
+                font-weight: normal
+                font-size: 14px
+                // line-height: 16px
+                border-radius: 6px 6px 0px 0px
+            .nav-link.active
+                background: #00643B
+                color: #FFFFFF
+    .tab-content
+        .added_title_div
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+            border-radius: 8px
+            margin: 29px 42px
+            padding: 20px 32px
+            .add_title
+                display: flex
+                justify-content: space-between
+                align-items: center
+                border-bottom: 2px 
+                h3
+                    margin-bottom: 0px
+                    font-family: $Segoe_UI
+                    font-weight: 600
+                    font-size: 24px
+                    line-height: 32px
+                    margin-bottom: 7px
+                input
+                    border: none
+                    margin-bottom: 0px
+                    font-family: $Segoe_UI
+                    font-weight: 600
+                    font-size: 24px
+                    line-height: 32px
+                    margin-bottom: 7px
+                    width: 60%
+                    border-bottom: 1px solid transparent
+                .edit_title
+                    border-bottom: 1px solid #00643B
+                span
+                    width: 1%
+                    position: relative
+                    cursor: pointer
+            .read_title
+                border: none
+                font-family: $Segoe_UI
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+                color: #666666
+                width: 60%
+            .read_edit_title
+                border-bottom: 1px solid #00643B
+        .qualitative_uestion,.after_added_questions
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+            border-radius: 8px
+            margin: 29px 21px
+            padding: 20px 32px
+            .add_question
+                width: 65%
+                border: 1px solid #DFDFDF
+                padding: 10px 9px
+                border-radius: 5px
+                p
+                    font-family: $Segoe_UI
+                    font-size: 12px
+                    line-height: 15px
+                    color: #666666
+            .drop_down_div
+                width: 33%
+                background: #FFC122
+                border-radius: 6px
+                display: flex
+                align-items: center
+                padding-left: 16px
+                padding-right: 16px
+                select
+                    background: transparent
+                    border: none
+                    margin-left: 13px
+                    width: 100%
+                    font-size: 14px
+                    color: #252525
+                    cursor: pointer
+            input
+                width: 100%
+                margin-top: 35px
+                border: none
+                border-bottom: 1px solid #0000001a
+                font-size: 12px
+                padding: 5px
+            .multichoice_grid_div, .multiple_choice_question
+                display: flex
+                // align-items: center
+                justify-content: space-between
+                margin-top: 19px
+                .row_div,.column_div
+                    width: 65%
+                    h3
+                        font-family: $Segoe_UI
+                        font-weight: 600
+                        font-size: 14px
+                        color: #252525
+                    .add-rows
+                        margin-top: 11px
+                        .add_row_icon
+                            display: flex
+                            align-items: center
+                            cursor: pointer
+                            width: 100px
+                            span
+                                display: flex
+                            p
+                                font-family: $Segoe_UI
+                                font-size: 12px
+                                line-height: 16px
+                                color: #00A7E7
+                                margin-left: 7px
+                        ol,ul
+                            padding-left: 1rem
+                            font-family: $Segoe_UI
+                            font-weight: normal
+                            font-size: 12px
+                            line-height: 16px
+                            li
+                                margin-bottom: 10px
+                                padding: 5px 0px
+                                input
+                                    width: 90%
+                                    display: inline-block
+                                    margin-top: 0px
+                                    border-color: transparent
+                                    font-family: $Segoe_UI
+                                    font-weight: normal
+                                    font-size: 12px
+                                    color: #000000
+                                    padding: 5px
+                                    &:hover
+                                        border-color: #0000001a
+                                    &:focus
+                                        border-color: #00643B
+                                span
+                                    // width: 10%
+                                    // display: inline-block
+                                    margin-left: 6px
+                                    cursor: pointer
+                        ul
+                            list-style: none
+                            padding-left: 0px
+                            li
+                                display: flex
+                                align-items: center
+                                .circle_div
+                                    width: 70%
+                                    display: flex
+                                    align-items: center
+                                    .circle_icon
+                                        width: auto
+                                        padding-left: 0px
+                                        padding-right: 12px
+                                    p
+                                        width: auto
+
+                    .add_row_icon
+                        display: flex
+                        align-items: center
+                        cursor: pointer
+                        width: 100px
+                        span
+                            display: flex
+                        p
+                            font-family: $Segoe_UI
+                            font-size: 12px
+                            line-height: 16px
+                            color: #00A7E7
+                            margin-left: 7px
+                .column_div
+                    width: 33%
+                .row_div
+                    position: relative
+                    &::after
+                        content: ""
+                        height: 100%
+                        width: 0.35px
+                        background: #7E7E7E
+                        top: 0
+                        right: -1.5%
+                        position: absolute
+            .multiple_choice_question
+                .row_div
+                    width: 100%
+                    .circle_div
+                        display: flex
+                        justify-content: space-between
+                        margin-top: 9px
+                        .option_name
+                            display: flex
+                            align-items: center
+                            width: 90%
+                            input
+                                margin-top: 0px
+                                width: 100%
+                                border-color: transparent
+                                font-family: $Segoe_UI
+                                font-weight: normal
+                                font-size: 12px
+                                color: #000000
+                                &:hover
+                                    border-color: #0000001a
+                                &:focus
+                                    border-color: #00643B
+                            span
+                                padding-right: 12px 
+                                display: flex
+                        .cross_icon
+                            display: flex
+                            align-items: center
+                            span
+                                cursor: pointer
+                                z-index: 10
+                    .add_row_icon
+                        margin-top: 15px
+                    &::after
+                        content: inherit
+        .without_section
+           margin: 29px 0px 
+        .after_added_questions
+            .add_title
+                display: flex
+                justify-content: space-between
+                align-items: center
+                input
+                    border: none
+                    margin-bottom: 0px
+                    font-family: $Segoe_UI
+                    font-weight: 600
+                    font-size: 24px
+                    line-height: 32px
+                    margin-bottom: 7px
+                    width: 60%
+                    border-bottom: 1px solid transparent
+                    margin-top: 0px
+                    padding-left: 0px
+                .edit_title
+                    border-bottom: 1px solid #00643B
+                span
+                    cursor: pointer
+            .read_title
+                border: none
+                font-family: $Segoe_UI
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+                color: #666666
+                width: 60%
+            .read_edit_title
+                border-bottom: 1px solid #00643B
+        .qualitative_uestion_empty
+            margin-left: 0px
+            margin-right: 0px
+        .after_added_questions
+            h3
+                font-family: $Segoe_UI
+                font-weight: 600
+                font-size: 14px
+                line-height: 15px
+                color: #252525
+                margin-bottom: 41px
+            .added_question
+                display: flex
+                justify-content: space-between
+                margin-bottom: 10px
+                .option_name
+                    display: flex
+                    align-items: center
+                    width: 100%
+                    .circle_icon
+                        display: flex
+                    p
+                        font-family: $Segoe_UI
+                        font-weight: normal
+                        font-size: 12px
+                        line-height: 16px
+                        color: #000000
+                        padding-left: 12px
+                    input
+                        width: calc( 60% - 15px )
+                        font-family: $Segoe_UI
+                        font-weight: normal
+                        font-size: 12px
+                        line-height: 16px
+                        color: #000000
+                        padding-left: 12px
+                        border-bottom: 1px solid transparent
+                        margin-top: 0px 
+                    .edit_title
+                        border-bottom: 1px solid #00643B
+                .cross_icon
+                    display: flex
+                    align-items: center
+                    span
+                        cursor: pointer
+                        z-index: 10
+                &:last-child
+                    margin-bottom: 0px
+            .add_row_icon
+                display: flex
+                align-items: center
+                cursor: pointer
+                width: 100px
+                margin-top: 15px
+                span
+                    display: flex
+                p
+                    font-family: $Segoe_UI
+                    font-size: 12px
+                    line-height: 16px
+                    color: #00A7E7
+                    margin-left: 7px
+
+        .duplicate_question
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+            border-radius: 8px
+            padding: 20px 32px
+            margin: 29px 11px
+            .add_title
+                display: flex
+                justify-content: space-between
+                align-items: center
+                border-bottom: 2px 
+                // border-bottom: 1px solid #0000001a
+                h3
+                    margin-bottom: 0px
+                    font-family: $Segoe_UI
+                    font-weight: 600
+                    font-size: 16px
+                    line-height: 21px
+                    margin-bottom: 7px
+                span
+                    width: 1%
+                    position: relative
+                    cursor: pointer
+                input
+                    border: none
+                    margin-bottom: 0px
+                    font-family: $Segoe_UI
+                    font-weight: 600
+                    font-size: 24px
+                    line-height: 32px
+                    margin-bottom: 7px
+                    width: 60%
+                    border-bottom: 1px solid transparent
+                .edit_title
+                    border-bottom: 1px solid #00643B
+            .read_title
+                border: none
+                font-family: $Segoe_UI
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+                color: #666666
+                width: 60%
+            .read_edit_title
+                border-bottom: 1px solid #00643B
+        .after_add_title,.added_section_div
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+            border-radius: 8px
+            padding: 20px 32px
+            margin: 29px 42px
+            .add_title
+                display: flex
+                justify-content: space-between
+                align-items: center 
+                // border-bottom: 1px solid #0000001a
+                h3
+                    margin-bottom: 0px
+                    font-family: $Segoe_UI
+                    font-weight: 600
+                    font-size: 16px
+                    line-height: 21px
+                    margin-bottom: 7px
+                span
+                    width: 1%
+                    position: relative
+                    cursor: pointer
+            .title_input
+                width: 100%
+                margin-top: 35px
+                border: none
+                border-bottom: 1px solid #0000001a
+        .added_section_div
+            box-shadow: none
+            .add_title
+                // border-bottom: none
+        .questions
+            margin-top: 40px
+            .nav.nav-pills
+                justify-content: center
+                .nav-item
+                    width: 15%
+                    align-items: center
+                    display: flex
+                    flex-direction: column
+                    height: auto
+                    .nav-link
+                        width: 60px
+                        height: 60px
+                        border-radius: 50%
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                    .nav-link.active
+                        .title_div
+                            span
+                                svg
+                                    path
+                                        fill: #ffffff
+
+                    p
+                        font-family: $Segoe_UI
+                        font-weight: normal
+                        font-size: 12px
+                        line-height: 16px
+                        margin-top: 11px
+
+                .medium_nav_item
+                    // margin: 0px 55px
+            .tab-content
+                margin-top: 31px
+                .tab-pane
+                    padding-left: 51px
+                    padding-right: 51px
+    .modal-form-cta
+        margin: 30px 51px 0px 51px
+        text-align: end
+        .btn-primary-yazmi 
+            margin-right: 0px
+    .only_question
+        margin: 40px 51px 0px 51px
+        .duplicate_question
+            margin-left: 0px
+            margin-right: 0px
+            .add_title
+                input
+                    border: none
+                    margin-bottom: 0px
+                    font-family: $Segoe_UI
+                    font-weight: 600
+                    font-size: 24px
+                    line-height: 32px
+                    margin-bottom: 7px
+                    width: 60%
+                    border-bottom: 1px solid transparent
+                .edit_title
+                    border-bottom: 1px solid #00643B
+            .read_title
+                border: none
+                font-family: $Segoe_UI
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+                color: #666666
+                width: 60%
+            .read_edit_title
+                border-bottom: 1px solid #00643B
+        .rate_teacher
+            margin-left: 0px
+            margin-right: 0px
+
+
+    
+
+.addtitle,.addsection,.question,.duplicate,.add_section,.multi_grid
+    .popover-body
+        padding: 0px !important
+        border-radius: 4px 4px 0px 0px !important
+        border: none !important
+        overflow: hidden !important
+        width: 170px !important
+        ul
+            li
+                a
+                    color: #252525 !important
+                    font-family: $Segoe_UI !important
+                    font-style: normal !important
+                    font-weight: 600 !important
+                    font-size: 14px !important
+                    line-height: 40px !important
+                    padding: 0px 14px !important
+                &:hover
+                    background: #D9E8E2 !important
+    .bs-popover-auto
+        top: 3px !important
+        left: -40px !important
+    .squar_box
+        width: 10px
+        height: 10px
+        background: #ffffff
+        transform: rotate(46deg)
+        position: absolute
+        top: -6px
+        left: 124px
+        border-top: 1px solid rgba(0,0,0,.2)
+        border-left: 1px solid rgba(0,0,0,.2)
+
+.duplicate
+    .bs-popover-auto
+        left: -34px !important
+.duplicate
+    .bs-popover-auto
+        left: -34px !important
+.addsection
+    .bs-popover-auto
+        top: 27px !important
+        left: 45px !important
+.add_section,.multi_grid
+    .bs-popover-auto
+        left: -34px !important
+
+
+
+.question
+    .popover-body
+        width: 179px !important
+        ul
+            li
+                &:nth-child(2)
+                    position: relative
+                    z-index: 1
+                span
+                    padding-left: 10px
+                    
+    .squar_box
+        top: 56px
+        left: -7px
+        transform: rotate(-46deg)
+    .bs-popover-auto
+        top: 89px !important
+        left: 125px !important
+.tab_content
+    .form_div
+        margin-left: 51px
+        margin-right: 51px
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+        border-radius: 8px
+        padding-bottom: 31px
+        padding-top: 31px
+        margin-top: 40px
+        .added_section_div
+            margin: 0px
+            padding: 0px 0px
+            .add_title
+                input
+                    border: none
+                    margin-bottom: 0px
+                    font-family: $Segoe_UI
+                    font-weight: 600
+                    font-size: 24px
+                    line-height: 32px
+                    margin-bottom: 7px
+                    width: 60%
+                    border-bottom: 1px solid transparent
+                .edit_title
+                    border-bottom: 1px solid #00643B
+            .read_title
+                border: none
+                font-family: $Segoe_UI
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+                color: #666666
+                width: 60%
+            .read_edit_title
+                border-bottom: 1px solid #00643B
+        .qualitative_uestion
+            position: relative
+            .three_douts
+                position: absolute
+                top: 0
+                right: 8px
+                cursor: pointer
+    .added_section_div,.added_title_div,.after_add_title
+        margin-left: 21px !important
+        margin-right: 21px !important
+    // .modal-form-cta
+    //     margin-left: 11px
+    //     margin-right: 11px
+    .added_title_div
+        &:first-child
+            margin-top: 0px
+    .qualitative_uestion
+        .add_question
+            input
+                margin-top: 0px
+                border-bottom: none
+                padding: 0px
+
+        
+
+@media screen and (max-width:1000px)
+    .user_questions_tab 
+        .tab-content 
+            .questions 
+                .nav.nav-pills 
+                    .nav-item
+                        width: 23%
+            .qualitative_uestion,.after_added_questions
+                .add_question,.drop_down_div
+                    width: 49.5%
+                .multichoice_grid_div
+                    .row_div
+                        width: 49%
+                        .add-rows 
+                            ol 
+                                li 
+                                    input
+                                        width: 80%
+                    .column_div
+                        width: 49%
+                
+
+

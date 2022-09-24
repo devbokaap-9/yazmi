@@ -1,0 +1,61 @@
+header {
+    background: var(--bg_green);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+header .right_content img {
+    width: 51.97px;
+    border-radius: 50%;
+}
+header .right_content p {
+    margin-left: 11px;
+    line-height: 23px;
+    font-family: var(--Segoe_UI);
+    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+header .right_content p span {
+    margin-left: 15.03px;
+}
+.user_profile .popover-body {
+    padding: 0px !important;
+    border-radius: 4px 4px 0px 0px !important;
+    border: none !important;
+    overflow: hidden !important;
+}
+.user_profile .popover-body ul li a {
+    color: #252525 !important;
+    font-family: var(--Segoe_UI) !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 40px !important;
+    padding: 0px 14px !important;
+}
+.user_profile .popover-body ul li:hover {
+    background: #D9E8E2 !important;
+}
+.user_profile .bs-popover-auto {
+    top: 3px !important;
+}
+.user_profile .squar_box {
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -5px;
+    left: 109px;
+}
+.first_li {
+    position: relative;
+    z-index: 1;
+}
+.first_li:hover .user_profile .squar_box {
+    background: #D9E8E2 !important;
+}

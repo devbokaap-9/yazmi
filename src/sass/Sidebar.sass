@@ -1,0 +1,295 @@
+.sidebar
+    height: calc( 100vh - 60px )
+    .left_sidebar,
+        // z-index: 2
+        width: 60px
+        background: $bg_green
+        height: 100%
+        ul
+            padding-top: 51px
+            height: 100%
+            display: flex
+            flex-direction: column
+            li
+                display: flex
+                justify-content: center
+                height: 34px
+                .navbar__link
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                .navbar__link--active
+                    width: 34px
+                    height: 34px
+                    background: #ffffff
+                    border-radius: 3px
+                    span
+                        svg
+                            path
+                                fill: #00643B 
+                .navbar__link--active_msg
+                    width: 34px
+                    height: 34px
+                    background: #ffffff
+                    border-radius: 3px
+                    span
+                        svg
+                            .white_svg
+                                fill: white
+                            .green_svg
+                                fill: #00643B 
+
+
+            .last_li
+                margin-bottom: 20.5px
+    .right_sidebar
+        width: 240px
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+        .nav-tabs
+            height: 40px
+            .nav-item
+                width: 50%
+                background: $bg_tab
+                border-radius: 0
+                text-align: center
+                font-family: $Segoe_UI
+                font-weight: 600
+                font-size: 15px
+                line-height: 19.95px
+                border: none
+                color: #00643B
+                display: flex
+                align-items: center
+                justify-content: center
+                padding: 0px
+            .active
+                background: $bg_tab_active
+                border: none
+                border-radius: 0
+                font-family: $Segoe_UI
+                font-weight: 400
+                color: #252525
+        .tab-content
+            height: calc( 100vh - 100px)
+            overflow: auto
+        .tab-Categories
+            a
+                width: 100% !important
+.learningSidebar
+    input
+        width: 100%
+        border: 1px solid #BCBCBC
+        border-radius: 5px
+        padding: 12px
+        margin: 9px 19px
+        font-family: $Segoe_UI
+        font-weight: normal
+        font-size: 11px
+        color: #666666
+    ul
+        display: flex
+        flex-direction: column
+        height: calc( 100% - 60px )
+        li
+            p
+                .plus_icon
+                    margin-right: 8px
+
+// studentSidebar css
+.student_sidebar
+    .btn
+        background: $back_btn
+        width: 100%
+        border-radius:  0px
+        font-size: 13px
+        color: #252525
+        padding: 10px 0px
+        display: flex
+        padding-left: 13px
+        span
+            margin-right: 10px
+    ul
+        margin-bottom: 0px
+        li
+            a
+                display: flex
+                align-items: center
+                padding: 13px 10px
+                span
+                    margin-right: 12px
+                .number
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    width: 14px
+                    height: 14px
+                    background: #D9E8E2
+                    font-weight: 600
+                    border-radius: 100%
+                    font-size: 5px
+                    color: #00643B
+                .icon_div
+                    width: 38px
+                    height: 28px
+                    display: flex
+                    align-content: center
+                    justify-content: center
+                    background: rgba(212, 78, 41, 0.3)
+                    border-radius: 5px
+                    img
+                        width: 14px
+                        max-height: 14px
+                        display: flex
+                        align-self: center
+                .video_icon
+                    width: 38px
+                    height: 28px
+                    position: relative
+                    img
+                        width: 100%
+                        height: 100%
+                    .play_icon
+                        background: #00643B
+                        width: 14px
+                        height: 14px
+                        display: flex
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        svg
+                            width: 100%
+                            height: 100%
+                .extenssion_name
+                    margin-left: 11px
+                    p
+                        margin-bottom: 0px
+                        font-size: 12px
+                        color: #666666
+                    span
+                        font-size: 12px
+                        color: #666666
+                        margin-right: 0px
+                    .quiz
+                        background: #FFC122
+                        padding: 4px 9px
+                        border-radius: 4px
+                        font-weight: 600
+                        font-size: 9px
+                        line-height: 12px
+                        color: #252525
+            .users_box_active
+                background: #D9E8E2
+                box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+    .question
+        padding: 15px
+        h3
+            font-weight: bold
+            font-size: 14px
+            color: #111111
+        p
+            font-weight: 600
+            font-size: 14px
+            line-height: 26px
+            color: #666666
+.UserSidebar
+    ul
+        li
+            p
+                .plus_icon
+                    margin-right: 14px
+.form_sidebar
+    height: calc( 100vh - 124px)
+    overflow: auto
+.right_sidebar
+    .create_new_form
+        width: 100%
+        border-radius: 0px
+        p
+            font-family: $Segoe_UI
+            font-weight: 600
+            font-size: 15px
+            line-height: 20px
+            text-align: center
+            color: #252525
+            .plus_icon
+                margin-right: 14px
+// extra class
+.mb_44
+    margin-bottom: 44px
+.mt_auto
+    margin-top: auto
+// .student_dashboard_sidebar
+//     display: none
+
+@media screen and (max-width: 800px)
+    .right_sidebar
+        display: none
+    .sidebar_close
+        display: block
+    .student_dashboard_sidebar
+        width: 100% !important
+        height: 62px !important
+        background: #00643B
+        position: fixed
+        left: 0
+        bottom: 0
+        z-index: 1
+        padding-left: 56px
+        padding-right: 56px
+        ul
+            padding-top: 0px !important
+            flex-direction: row !important
+            align-items: center !important
+            justify-content: center
+            li
+                margin-bottom: 0px
+    .student_responsive_sidebar
+        flex-direction: column
+        .sidebar 
+            height: auto
+            .right_sidebar 
+                display: block
+                width: 100%
+                .student_sidebar
+                    padding-bottom: 62px
+                    .btn
+                        // display: none
+                        text-align: left
+                        padding-left: 16px
+                    .question
+                        margin-bottom: -52px
+                .sidebar_bg_color
+                    background: #F9F9F9
+        .question_answser_div
+            height: calc( 100vh - 400px)
+        .back_btn
+            display: block
+            background: #FFC122
+            width: 100%
+            border-radius: 0px
+            font-size: 13px
+            color: #252525
+            padding: 10px 0px
+        .user_div  
+            display: none
+        .main_section 
+            .all_user
+                height: auto
+                .data_table
+                    height: 60vh
+                    margin: 0px 0px 0px 0px
+                    .start_test
+                        box-shadow: none
+                        padding-top: 70px
+                        padding-bottom: 70px
+                    .responsive_header  
+                        display: block
+                        box-shadow: none
+                .practice_test_result
+                    width: 100%
+                    margin: 0px
+                    height: auto
+                    padding-bottom: 52px
+
+            

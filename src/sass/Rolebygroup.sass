@@ -1,0 +1,197 @@
+.role_by_group
+    margin-top: 8px
+    .card_div
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+        border-radius: 8px
+        overflow: hidden
+        .card_header
+            background: $bg_green 
+            display: flex
+            height: 44px
+            align-items: center
+            justify-content: space-between
+            padding: 14px 21px
+            color: #ffffff
+            .role_name
+                cursor: pointer
+                p
+                    font-size: 14px
+                    line-height: 16px
+                span
+                    margin-left: 10px
+            .role_name_without_cursor
+                p
+                    font-size: 14px
+                    line-height: 16px
+                span
+                    margin-left: 10px
+            .check_box
+                p
+                    margin-right: 13px
+                    font-size: 14px
+                    line-height: 16px
+        .card_body
+            padding: 25px 10px
+            .accordion
+                .accordion-item
+                    border: none
+                    .accordion-header
+                        button
+                            font-family: $Segoe_UI
+                            font-size: 16px
+                            line-height: 21px
+                            padding: 10px
+                            color: #252525
+                            &::after
+                                transform: rotate(-90deg)
+                                position: absolute
+                                right: 11px
+                            span
+                                margin-left: 9px
+                                font-size: 12px
+                                line-height: 16px
+                                color: #252525
+                        .accordion-button.collapsed
+                            .add_role
+                                display: none
+                        .accordion-button:not(.collapsed)
+                            background-color: #D9E8E2
+                        .accordion-button:not(.collapsed)::after
+                            transform: rotate(0deg)
+                            color: #252525
+                            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+                        .accordion-button
+                            color: #252525
+                            .add_role
+                                display: inline-block
+                                margin-left: auto
+                                margin-right: 79px 
+                                font-size: 14px
+                                line-height: 16px
+                                color: #00643B
+                .accordion-body
+                    padding: 0
+                    ul
+                        padding-left: 0px
+                        li
+                            list-style: none
+                            display: flex
+                            height: 35px
+                            margin-top: 5px
+                            margin-bottom: 5px
+                            padding-left: 15px
+                            padding-right: 8px
+                            cursor: pointer
+                            .head_div
+                                display: flex
+                                align-items: center
+                                h3
+                                    font-size: 15px
+                                    line-height: 20px
+                                    color: #252525
+                                span
+                                    font-size: 12px
+                                    line-height: 16px
+                                    margin-left: 26px
+                                    color: #252525
+                            .action_icon
+                                display: none
+                                span
+                                    width: 25px
+                                    height: 25px
+                                    display: flex
+                                    align-items: center
+                                    justify-content: center
+                                    border-radius: 3px
+                                    background-color: #ffffff
+                                    margin-left: 10px
+                                    cursor: pointer
+                            &:hover
+                                background-color: #EAE8EF
+                            &:hover .action_icon
+                                display: flex
+        .switch 
+            display: inline-block
+            height: 20px
+            position: relative
+            width: 42px
+
+        .switch input 
+            display: none
+
+        .slider 
+            background-color: #000000
+            bottom: 0
+            cursor: pointer
+            left: 0
+            position: absolute
+            right: 0
+            top: 0
+            transition: .4s
+
+        .slider:before 
+            background-color: #fff
+            bottom: 2px
+            content: ""
+            height: 17px
+            left: 1px
+            position: absolute
+            transition: .4s
+            width: 17px
+
+        input:checked + .slider 
+            background-color: #66bb6a
+
+        input:checked + .slider:before 
+            transform: translateX(22px)
+
+        .slider.round 
+            border-radius: 34px
+
+        .slider.round:before 
+            border-radius: 50%
+                        
+
+
+
+
+
+
+
+            // ul
+            //     max-width: 100%
+            //     height: auto
+            //     li
+            //         position: relative
+            //         .MuiTreeItem-content
+            //             .MuiTypography-root
+            //                 padding-left: 15px
+            //                 height: 40px
+            //                 display: flex
+            //                 align-items: center
+            //                 font-size: 16px
+            //                 line-height: 21px
+            //                 color: #252525
+            //         .MuiTreeItem-iconContainer 
+            //             position: absolute
+            //             right: 0
+            //             .MuiSvgIcon-root
+            //                 font-size: 25px
+            //         ul
+            //             margin-left: 0px
+            //             .MuiCollapse-wrapper
+            //                 .MuiCollapse-wrapperInner
+            //                     li
+            //                         .MuiTreeItem-content
+            //                             .MuiTypography-root
+            //                                 // padding: 7px 15px
+            //                                 height: 35px
+            //                                 font-size: 16px
+            //                                 line-height: 21px
+            //                                 color: #252525
+            //                                 display: flex
+            //                                 align-items: center
+            //     .testing
+            //         position: absolute
+            //         top: 0
+            //         left: 0

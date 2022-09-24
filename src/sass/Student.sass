@@ -1,0 +1,126 @@
+.start_test
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+    border-radius: 8px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    height: 100%
+    img
+    .btn
+        &:hover
+            color: #ffffff
+    h3
+        font-weight: 600
+        font-size: 18px
+        color: #252525
+        margin-top: 12px
+        margin-bottom: 8px
+    p
+        font-size: 14px
+        color: #252525
+.view_exam
+    ul
+        margin-bottom: 22px
+        li
+            font-size: 14px
+            line-height: 19px
+            color: #252525
+    .para
+        font-size: 14px
+        line-height: 19px
+        text-align: center
+        color: #252525
+        margin-bottom: 16px
+
+.question_answser_div
+    height: calc( 100vh - 150px )
+    margin: 21px 26px
+    width: 100%
+    .question_answser
+        height: 100%
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+        border-radius: 8px 
+        padding: 32px 37px
+        .option_div
+            display: flex
+            align-items: center
+            height: 34px
+            margin-bottom: 10px
+            position: relative
+            .select_question
+                background: #F2F7F5
+                border: 1px solid #DFDFDF
+                border-radius: 5px
+                font-size: 12px
+                color: #666666
+                padding: 10px 20px
+                width: 100%
+            .MuiFormControlLabel-root
+                margin-left: 0px
+            .delete_icon
+                height: 34px
+                display: flex
+                justify-content: center
+                align-items: center 
+                width: 34px
+                background: #ffffff
+                border: 1px solid #DFDFDF
+                border-radius: 5px
+                // padding: 7px 8px
+                margin-left: 13px
+            &:last-child
+                margin-bottom: 0px
+            .container-radio
+                .option_checkbox
+                    position: absolute
+                    top: 50%
+                    left: 0%
+                    transform: translate(0%, -50%)
+                .checkmark-radio
+                    top: 50%
+                    left: 0%
+                    transform: translate(0%, -50%)
+        legend
+            font-family: $Segoe_UI
+            font-weight: 600
+            font-size: 14px
+            line-height: 19px
+            color: #252525
+            margin-top: 14px
+        .MuiFormControl-root
+            width: 100%
+            .MuiRadio-colorSecondary.Mui-checked
+                color: #0AB83B
+            .MuiRadio-root
+                color: #C4C4C4
+                &:hover
+                    background: none
+        .add_option_tag
+            margin-left: 46px
+    .pre_and_next_button
+        margin-top: 12px
+        margin-bottom: 12px
+        text-align: end
+        .btn-secondary-yazmi
+            margin-right: 12px
+            span
+                margin-right: 5px
+        .btn-primary-yazmi
+            span
+                margin-left: 5px
+
+@media screen and (max-width: 800px)
+    .question_answser_div
+        height: auto
+        margin: 0px
+        .question_answser
+            padding: 32px 17px
+            box-shadow: none
+        .pre_and_next_button
+            display: flex
+            // justify-content: space-between
+            margin-left: 32px
+            margin-right: 32px
+            .btn-primary-yazmi
+                margin-left: auto

@@ -1,0 +1,98 @@
+.login-container
+    display: flex
+    width: 100%
+    height: 100%
+    min-height: 100vh
+    margin: 0 auto
+    .login-banner-wrapper
+        position: relative
+        flex: 0 0 50%    
+        .login-banner 
+            width: 100%
+            height: 100vh
+            // object-fit: cover
+            max-width: 100%
+
+    .login-content-wrapper
+        display: flex
+        align-items: center
+        width: 100%
+        .login-content
+            padding: 0 30px
+            flex: 0 0 100%
+            max-width: 520px
+            .forgot-password-form
+              h3
+                margin: 0 0 20px 0
+                font-family: $Segoe_UI_Bold
+                font-size: 24px
+                font-weight: bold
+                line-height: 32px
+                color: #252525
+            .login-logo
+              margin: 0 0 28px 0
+            .login-yazmi
+                .form-group
+                   margin: 0 0 16px 0
+                   .login-link
+                      .arrow-right
+                         padding: 0 4px 0 0
+                .forgot-password-link
+                   margin: 0 0 0 20px
+                  
+            .select-user-type
+                display: flex
+                align-items: center
+                width: 100%
+                justify-content: center
+                text-align: center
+                .btn-large-bg
+                    font-family: $Segoe_UI
+                    font-weight: 700
+                    display: inline-block
+                    padding: 25px 30px
+                    text-align: center
+                    font-size: 16px                    
+                    line-height: 16px
+                    color: #fff
+                    background: #00643B
+                    border-radius: 6px
+                    width: 100%
+                    text-decoration: none
+a, a:hover, a:focus, a:active, input, input:focus, input:active, button, button:hover, button:focus, button:active, select, select:focus, select:active
+  text-decoration: none
+  outline: 0px none
+  box-shadow: none !important
+.link-tertiary
+  display: inline-block
+  font-size: 13px
+  line-height: 16px
+  color: #252525 !important
+  text-decoration: none
+  &:hover, &:active, &:focus
+		display: inline-block
+		font-size: 13px
+		line-height: 16px
+		color: #252525 !important
+		text-decoration: none  
+.ml_23
+  margin-left: 23px
+.label-yazmi
+  margin: 0 0 8px 0
+  font-weight: normal
+  font-size: 13px
+  line-height: 16px
+  color: #252525
+@media only screen and  (max-width: 1024px)    
+    .login-container
+      .login-content-wrapper 
+        .login-content
+          padding: 0px 13px 
+          .select-user-type 
+            .btn-large-bg
+              padding: 20px 15px
+@media only screen and  (max-width: 800px)    
+    .login-container
+      .login-banner-wrapper
+        display: none
+          

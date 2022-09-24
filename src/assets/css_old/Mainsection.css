@@ -1,0 +1,13 @@
+/* @import url("../../App.css"); */
+
+.m_14{
+    padding: 14px 14px 0 14px;
+}
+
+.main_section{
+    width: 100%;
+    overflow: hidden;
+}
+.all_user .right_user li{
+    cursor: pointer;
+}

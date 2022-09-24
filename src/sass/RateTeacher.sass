@@ -1,0 +1,235 @@
+.rate_teacher
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+    border-radius: 8px
+    padding: 20px 32px
+    margin: 29px 11px
+    background: #ffffff
+    .row
+        h3
+            font-family: $Segoe_UI
+            font-weight: 600
+            font-size: 14px
+            line-height: 15px
+            color: #252525
+            margin-bottom: 50px   
+        .add_title
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding-top: 32px
+            padding-bottom: 50px
+            padding-left: 0px
+            input
+                border: none
+                margin-bottom: 0px
+                font-family: $Segoe_UI
+                font-weight: 600
+                font-size: 24px
+                line-height: 32px
+                margin-bottom: 7px
+                width: 60%
+                border-bottom: 1px solid transparent
+                margin-top: 0px
+                padding-left: 0px
+            .edit_title
+                border-bottom: 1px solid #00643B
+            span
+                cursor: pointer
+        .read_title
+                border: none
+                font-family: $Segoe_UI
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+                color: #666666
+                width: 60%
+        .read_edit_title
+            border-bottom: 1px solid #00643B
+        .role_name_div
+            ol
+                padding-left: 0px
+                display: flex
+        .actions_div, .access_div, .role_name_div
+            .action_name
+               display: flex
+               padding: 8px 10px
+               justify-content: space-between
+               li
+                    width: 30%
+                    font-family: $Segoe_UI
+                    font-weight: normal
+                    font-size: 12px
+                    line-height: 16px
+                    text-align: center
+                    letter-spacing: 0.4px
+                    // padding-bottom: 0px
+                    height: auto
+            ul
+                padding-left: 0px
+                background: #D9E8E2
+                padding: 10px 10px
+                margin-bottom: 4px
+                li
+                    list-style: none
+                    display: flex
+                    justify-content: space-between
+                    // padding-bottom: 44px
+                    height: 60px
+                    .li_div
+                        width: 30%
+                        p
+                            font-family: $Segoe_UI
+                            font-size: 13px
+                            line-height: 16px
+                            color: #000000
+                            margin-bottom: 15px !important
+                        .checbox_div
+                            width: 100%
+                            .form-check
+                                width: 100%
+                                display: flex
+                                justify-content: center
+                                input
+                                    border-radius: 100%
+                                    border: 1px solid #C4C4C4
+                                    cursor: pointer
+                                    &:focus
+                                        border: 1px solid #C4C4C4
+                                    &:checked
+                                        background-color: #0AB83B
+                                        border: 1px solid #0AB83B
+                    &:last-child
+                        margin-bottom: 0px
+                                
+                    p
+                        width: 100%
+                        text-align: center
+            
+        .role_name_div
+            ol
+                background: #ffffff
+                flex-direction: column
+                // li 
+                //     font-family: $Segoe_UI
+                //     font-weight: normal
+                //     font-size: 12px
+                //     line-height: 16px
+                //     letter-spacing: 0.4px
+                //     color: #000000
+            ol
+                padding-left: 0px
+                margin-bottom: 4px
+                padding: 10px 0px
+                li
+                    font-family: $Segoe_UI
+                    font-size: 12px
+                    line-height: 16px
+                    letter-spacing: 0.4px
+                    color: #000000
+                    // padding-bottom: 44px
+                    height: 60px
+        .col
+            background: #D9E8E2
+    .multichoice_grid_div
+        display: flex
+        justify-content: space-between
+        .row_div,.column_div
+            width: 65%
+            h3
+                font-family: $Segoe_UI
+                font-weight: 600
+                font-size: 14px
+                color: #252525
+            .add-rows
+                margin-top: 11px
+                .add_row_icon
+                    display: flex
+                    align-items: center
+                    cursor: pointer
+                    width: 100px
+                    span
+                        display: flex
+                    p
+                        font-family: $Segoe_UI
+                        font-size: 12px
+                        line-height: 16px
+                        color: #00A7E7
+                        margin-left: 7px
+                ol,ul
+                    padding-left: 1rem
+                    font-family: $Segoe_UI
+                    font-weight: normal
+                    font-size: 12px
+                    line-height: 16px
+                    li
+                        margin-bottom: 10px
+                        padding: 5px 0px
+                        input
+                            width: 90%
+                            display: inline-block
+                            margin-top: 0px
+                            border-color: transparent
+                            font-family: $Segoe_UI
+                            font-weight: normal
+                            font-size: 12px
+                            color: #000000
+                            padding: 5px
+                            &:hover
+                                border-color: #0000001a
+                            &:focus
+                                border-color: #00643B
+                        span
+                            // width: 10%
+                            // display: inline-block
+                            margin-left: 20px
+                            cursor: pointer
+                ul
+                    list-style: none
+                    padding-left: 0px
+                    li
+                        display: flex
+                        align-items: center
+                        .circle_div
+                            width: 70%
+                            display: flex
+                            align-items: center
+                            .circle_icon
+                                width: auto
+                                padding-left: 0px
+                                padding-right: 12px
+                            p
+                                width: auto
+
+            .add_row_icon
+                display: flex
+                align-items: center
+                cursor: pointer
+                width: 100px
+                span
+                    display: flex
+                p
+                    font-family: $Segoe_UI
+                    font-size: 12px
+                    line-height: 16px
+                    color: #00A7E7
+                    margin-left: 7px
+        .column_div
+            width: 33%
+        .row_div
+            position: relative
+            &::after
+                content: ""
+                height: 100%
+                width: 0.35px
+                background: #7E7E7E
+                top: 0
+                right: -1.5%
+                position: absolute
+
+@media screen and (max-width: 1300px)
+    .rate_teacher 
+        .row 
+            .actions_div 
+                .action_name 
+                    li
+                        height: 32px

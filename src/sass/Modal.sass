@@ -1,0 +1,1063 @@
+input:focus, textarea:focus, select:focus
+	outline: none
+.modal-backdrop
+	z-index: 1071
+.modal
+	z-index: 1072
+
+.modal-header
+	background: #00643B
+
+.modal-header, .modal-body
+	padding: 12px 25px !important
+
+.modal-header button.close
+	width: 13px
+	height: 13px
+	padding: 12px
+	border: 0px none
+	background-repeat: no-repeat
+	background-position: center
+	background: transparent
+	span
+		display: none
+.modal-content, .modal-header
+	border: 0px none !important
+	border-radius: 6px 6px 0px 0px !important
+.confirmModal .modal-content
+	border-radius: 6px !important
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+.confirmModal .modal-dialog
+	min-width: 450px !important
+	max-width: 450px !important
+.modal-header
+	position: relative
+.close-modal-header
+	position: absolute
+	right: 25px
+	top: 7%
+.edit-modal-header
+	position: absolute
+	right: 50px
+	top: 7%
+.modal-title.h4 h3
+	font-family: $Segoe_UI_Bold
+	font-weight: bold
+	margin: 0 0 5px 0
+	font-weight: bold
+	font-size: 19px
+	line-height: 25px
+	color: #fff
+.modal-title.h4 p
+	margin: 0 0 5px 0
+	font-weight: normal
+	font-size: 12px
+	line-height: 16px
+	color: #fff
+.modal-form-wrapper
+	font-family: $Segoe_UI
+	font-weight: normal
+	padding: 20px 0 !important
+.uf-single
+	margin: 0 0 15px 0
+.uf-single
+	display: flex
+	align-items: center
+	justify-content: flex-start
+	width: 100%
+.uf-label,.uf-field-value
+	margin: 0 10px 0 0
+	flex: 0 0 120px
+	font-size: 13px
+	line-height: 16px
+	color: #252525
+
+.uf-field
+	margin: 0 10px 0 0
+	flex: 0 0 398px
+
+.uf-field-value
+	position: relative
+	top: -1px
+
+.search-yazmi, .input-yazmi
+	width: 100%
+	padding: 7px 8px
+	font-size: 13px
+	line-height: 16px
+	border: 1px solid #DFDFDF
+	border-radius: 5px
+.select_yazmi
+	color: #252525
+.search-yazmi:hover, .search-yazmi:focus, .search-yazmi:active, .input-yazmi:hover, .input-yazmi:focus, .input-yazmi:active 
+  	border: 1px solid #00643B
+
+.uf-field-link a, .uf-field-link a:hover, .uf-field-link a:focus, .uf-field-link a:active
+	font-family: $Segoe_UI
+	font-weight: 600
+	font-size: 13px
+	line-height: 16px
+	color: #252525
+	text-decoration: none
+
+.uf-section-title
+	margin: 35px 0 20px 0
+	font-family: $Segoe_UI_Bold
+	font-size: 14px
+	line-height: 16px
+
+.modal-form-cta
+	margin: 35px 0 0 0
+	.spinner-border
+		margin-right: 10px
+
+.modal-form-cta button
+	margin: 0 10px 0 0
+.btn-primary-yazmi
+	font-family: $Segoe_UI
+	display: inline-block
+	padding: 10px 25px
+	border: 1px solid #00643B
+	background: #00643B
+	color: #fff
+	font-size: 14px
+	line-height: 16px
+	border-radius: 6px
+
+.btn-secondary-yazmi
+	font-family: $Segoe_UI
+	display: inline-block
+	padding: 10px 25px
+	border: 1px solid #666
+	background: #fff
+	color: #666
+	font-size: 14px
+	line-height: 16px
+	border-radius: 6px
+
+.bulk-upload-modal
+	text-align: center
+	padding: 200px 0
+
+.bulk-upload-modal p
+	margin: 0 0 12px 0
+	font-size: 13px
+	line-height: 16px
+	color: #252525
+
+.bulk-upload-modal a, .bulk-upload-modal a:hover, .bulk-upload-modal a:focus, .bulk-upload-modal a:active,.link-highlight,.link-highlight:hover,.link-highlight:focus,.link-highlight:active
+	color: #0A47E5
+	font-size: 13px
+	line-height: 16px
+	text-decoration: underline
+.bulk_upload_input
+	z-index: 1
+	position: relative
+	width: 100%
+	opacity: 0
+	height: 100%
+	cursor: pointer
+
+.bulk-upload-modal a.upload-file 
+	display: inline-block
+	margin: 0 0 12px 0
+	font-size: 14px
+	font-weight: bold
+	line-height: 16px
+	color: #252525
+	text-decoration: none
+.bulk-upload-modal
+	.upload_yazmi_browser	
+		.upload_link
+			text-decoration-line: underline
+			text-decoration-color: #0A47E5
+			color: #0A47E5
+			font-weight: 400
+
+/*Custom radio button*/
+
+/* The container-radio */
+.container-radio
+	display: block
+	position: relative
+	padding: 2px 0 0 35px
+	margin-bottom: 0
+	cursor: pointer
+	font-size: 13px
+	line-height: 16px
+	color: #666
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+/* Hide the browser's default radio button */
+
+.container-radio input
+	position: absolute
+	opacity: 0
+	cursor: pointer
+
+/* Create a custom radio button */
+
+.checkmark-radio
+	position: absolute
+	top: 0
+	left: 0
+	height: 19px
+	width: 19px
+	background-color: #fff
+	border-radius: 50%
+	border: 1px solid #C4C4C4
+
+/* On mouse-over, add a grey background color */
+
+.container-radio:hover input~.checkmark-radio
+	background-color: #eee
+
+/* When the radio button is checked, add a blue background */
+
+.container-radio input:checked~.checkmark-radio
+	border: 1px solid #C4C4C4
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark-radio:after
+	content: ""
+	position: absolute
+	display: none
+
+/* Show the indicator (dot/circle) when checked */
+
+.container-radio input:checked~.checkmark-radio:after
+	display: block
+
+/* Style the indicator (dot/circle) */
+
+.container-radio .checkmark-radio:after
+	top: 3px
+	left: 3px
+	width: 11px
+	height: 11px
+	border-radius: 50%
+	background: #0AB83B
+
+/*Custom radio button*/
+
+.radio-field
+	display: flex
+	width: 100%
+	align-items: center
+	justify-content: flex-start
+	margin: 0 0 10px 0
+
+.radio-field-wrapper
+	flex: 0 0 48%
+
+.broadcast-form-wrapper .uf-field
+	flex: 0 0 460px
+
+.display-block
+	width: 100%
+
+.btn-grey
+	padding: 10px 25px
+	font-size: 13px
+	line-height: 17px
+	text-align: center
+	color: #666666
+	background: #EBEBEB
+	border-radius: 5px
+	border: 0px
+
+.btn-grey:hover, .btn-grey:focus, .btn-grey:active
+	background: #dcdcdc
+
+.broadcast-cta
+	margin-left: 130px
+
+.prev-broadcast-wrapper
+	padding: 17px
+	background: #FAF9FE
+	border: 1px solid #DFDFDF
+	box-sizing: border-box
+	border-radius: 5px
+
+.pb-single
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+	margin: 0 0 25px 0
+	font-size: 13px
+	line-height: 16px
+
+.pb-single p
+	margin: 0
+
+.pb-single:last-of-type
+	margin: 0
+
+.pbs-left
+	flex: 0 0 60%
+
+.pbs-right
+	flex: 0 0 40%
+
+.pbs-right
+	text-align: right
+
+.text-bold
+	font-weight: bold
+
+.prev-broadcast-topic
+	line-height: 18px
+
+.uf-field-two .input-yazmi, .uf-field-two .select-yazmi
+	width: 48%
+
+.uf-field-two .input-yazmi:first-child
+	margin-right: 4%
+
+.uf-single.uf-note
+	margin: 0
+
+.uf-note p
+	margin: 0
+	font-family: $Poppins_500
+	font-weight: 500
+	font-size: 12px
+	line-height: 17px
+
+.text-red
+	color: #F14F4F
+
+.confirm-modal-wrapper
+	padding: 12px 0
+
+.cm-title
+	position: relative
+	display: block
+	width: 100%
+	justify-content: space-between
+	align-items: flex-start
+
+.cm-title-content
+	flex: 0 0 80%
+
+.cm-title-text
+	font-family: $Segoe_UI
+	/** font-weight: 600 **/
+	word-break: break-all
+	text-transform: uppercase
+
+.cm-title-close
+	position: absolute
+	right: 0
+	top: -5px
+
+.cm-content
+	font-family: $Segoe_UI
+	margin: 15px 0
+	font-weight: normal
+	font-size: 14px
+	line-height: 18px
+
+/*Custom checkbox*/
+
+/* The container-checkbox */
+
+/* The container-checkbox */
+
+.container-checkbox
+	display: block
+	position: relative
+	padding-left: 30px
+	margin-bottom: 12px
+	cursor: pointer
+	font-size: 14px
+	line-height: 18px
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+/* Hide the browser's default checkbox */
+
+.container-checkbox input
+	position: absolute
+	opacity: 0
+	cursor: pointer
+	height: 0
+	width: 0
+
+/* Create a custom checkbox */
+
+.checkmark-checkbox
+	position: absolute
+	top: -1px
+	left: 0
+	height: 20px
+	width: 20px
+	background-color: #fff
+	border: 1px solid #D3DCE6
+	border-radius: 5px
+
+/* On mouse-over, add a grey background color */
+
+.container-checkbox:hover input~.checkmark-checkbox
+	background-color: #eee
+
+/* When the checkbox is checked, add a blue background */
+
+.container-checkbox input:checked~.checkmark-checkbox
+	background-color: #0AB83B
+	border: 1px solid #D3DCE6
+
+/* Create the checkmark-checkbox/indicator (hidden when not checked) */
+
+.checkmark-checkbox:after
+	content: ""
+	position: absolute
+	display: none
+
+/* Show the checkmark-checkbox when checked */
+
+.container-checkbox input:checked~.checkmark-checkbox:after
+	display: block
+
+/* Style the checkmark-checkbox/indicator */
+
+.container-checkbox .checkmark-checkbox:after
+	left: 6px
+	top: 1px
+	width: 7px
+	height: 12px
+	border: solid white
+	border-width: 0px 2px 2px 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+
+/*Custom checkbox*/
+
+.confirm-cta
+	margin: 40px 0 0 0
+	display: flex
+	width: 100%
+	justify-content: space-between
+	align-items: center
+
+.confirm-cta a,.confirm-cta a:hover,.confirm-cta a:focus,.confirm-cta a:active
+	font-family: $Segoe_UI
+	/** font-weight: 600 **/
+	font-size: 16px
+	line-height: 16px
+	color: #252525
+.downloadingModal
+	margin: 10vh auto
+.downloading-title
+	margin: 0 0 12px 0
+	font-weight: 700
+	font-size: 14px
+	line-height: 16px
+
+.upload_file
+	position: relative
+	height: 40px
+.upload_input
+	z-index: 1
+	position: relative
+	width: 100%
+	opacity: 0
+	height: 100%
+	cursor: pointer
+.upload_btn
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	display: flex
+	align-items: center
+	justify-content: center
+.downloading-text
+	font-size: 13px
+	line-height: 18px
+.delete-modal-wrapper
+	.modal-content
+		width: 450px
+		margin: 0 auto
+		.cm-title-text
+			font-family: $Segoe_UI
+			font-weight: normal
+			font-size: 18px
+			line-height: 16px
+			text-align: center
+	.cm-content
+		margin: 30px auto 40px auto
+		max-width: 275px
+		text-align: center
+		font-size: 15px
+		line-height: 22px
+	.delete-role
+		margin: 30px auto 10px auto !important
+	.user-in-role
+		margin: 10px auto 30px auto !important
+	.reassign-roles-note
+		max-width: 100% !important
+		margin:0 auto 40px auto !important
+		font-size: 12px
+		line-height: 18px
+	.reassign-role-wrapper
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
+		align-items: center
+		width: 100%
+		margin: 0 0 25px 0
+		.rr-left,.rr-right
+			flex: 0 0 50%				
+		.rr-left
+			font-size: 18px
+			line-height: 16px		
+	.confirm-cta
+		a
+			font-family: $Segoe_UI
+			font-weight: normal
+		&:hover,&:active,&:focus
+			font-family: $Segoe_UI
+			font-weight: normal
+		button
+			font-family: $Segoe_UI
+			font-weight: normal
+			font-size: 16px
+			background: transparent
+			border: none
+			color: #252525 !important
+		.spinner-border
+			border-color: #00643B
+			border-right-color: transparent
+	.cm-title-close
+		button
+			background: transparent
+			border: none
+
+// .edit-modal
+// 	.modal-dialog
+// 		.modal-content
+// 			.modal-body
+// 				padding-bottom: 40px !important
+// 				.modal-form-cta
+// 					margin: 5px 0 0 0
+.manage-permissions-wrapper
+	.uf-single
+		flex-wrap: wrap	
+		.uf-label
+			flex: 0 0 100%
+			margin: 0 0 15px 0
+			font-size: 14px
+			line-height: 16px
+		.uf-field
+			.input-yazmi
+				padding: 10px 15px
+				width: 450px !important
+			.radio-field-wrapper
+				flex: 0 0 35%
+				.container-radio
+					padding: 2px 0 0 30px		
+	.enter-federal
+		margin: 0 0 40px 0
+	.shared-with-wrapper
+			padding: 20px 0 0 0
+			border-top: 1px solid #DFDFDF
+			.sw-single
+				display: flex
+				width: 100%
+				justify-content: flex-start
+				align-items: flex-start
+				margin: 0 0 15px 0
+				.sw-left,.sw-right
+					flex: 0 0 250px
+					font-size: 12px !important
+					color: #666 !important
+				.sw-title.sw-title,.sw-right.sw-title
+					font-size: 14px !important
+					color: #252525 !important
+.modal.confirmModal,.modal.delete-modal-wrapper
+	height: auto
+	width: auto
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+
+.s_content
+	font-size: 13px
+	display: flex
+	width: 100%
+	justify-content: center
+		
+
+@media screen and ( min-width: 576px )
+	.modal-dialog
+		min-width: 650px !important
+		max-width: 725px !important
+
+.user-form-wrapper .uf-field
+	    flex: 0 0 399px
+.school_tab .tab-content .uf-field
+	flex: 0 0 445px
+
+
+// create New role css
+.create_new_role
+	.modal-content
+		.modal-body
+			padding: 45px
+			.body_head
+				padding-top: 18px
+				padding-bottom: 15px
+				border-bottom: 1px solid  #e6e6e6
+				.uf-single
+					.uf-label
+						color: #000000
+					.uf-field
+						flex: 0 0 339px
+						.search-yazmi
+							color: #666666
+			.select_head
+				font-family: $Segoe_UI
+				font-weight: 600
+				font-size: 14px
+				line-height: 16px
+				color: #252525
+				margin-top: 19px
+				margin-bottom: 12px
+			.row
+				.role_name_div
+					ul
+						padding-left: 0px
+						height: 77px
+						align-items: center
+						display: flex
+						li
+							list-style: none
+				.actions_div, .access_div, .role_name_div
+					h4
+						margin-bottom: 19px
+						font-family: $Segoe_UI
+						font-weight: 600
+						font-size: 14px
+						line-height: 16px
+						color: #252525
+						text-align: center
+					ul
+						padding-left: 0px
+						background: #D9E8E2
+						padding: 10px 10px
+						margin-bottom: 4px
+						li
+							list-style: none
+							display: flex
+							justify-content: space-between
+							margin-bottom: 15px
+							height: 57px
+							.li_div
+								width: 21%
+								p
+									font-family: $Segoe_UI
+									font-size: 13px
+									line-height: 16px
+									color: #252525
+									margin-bottom: 15px !important
+								.checbox_div
+									width: 100%
+									.form-check
+										width: 100%
+										display: flex
+										justify-content: center
+										input
+											border-radius: 100%
+											border: 1px solid #C4C4C4
+											cursor: pointer
+											&:focus
+												border: 1px solid #C4C4C4
+											&:checked
+												background-color: #0AB83B
+												border: 1px solid #0AB83B
+							&:last-child
+								margin-bottom: 0px
+										
+							p
+								width: 100%
+								text-align: center
+					
+				.role_name_div
+					ul
+						background: #ffffff
+						li
+							font-family: $Segoe_UI
+							font-weight: 600
+							font-size: 13px
+							line-height: 16px
+							color: #252525
+.form_user_view
+	.uf-single
+		display: inline-block
+		box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+		border-radius: 6px
+		padding: 22px 25px
+		.uf-label
+			font-family: $Segoe_UI
+			font-style: normal
+			font-weight: 600
+			font-size: 16px
+			line-height: 16px
+			color: #252525
+			margin-bottom: 10px
+		.uf-field
+			.uf-field-value
+				font-family: $Segoe_UI
+				font-weight: normal
+				font-size: 14px
+				line-height: 16px
+				color: #252525
+
+.share_form
+	.uf-single
+		.uf-field
+			width: calc( 100% - 130px )
+			flex: none
+	.modal-form-cta
+		display: flex
+		justify-content: space-between
+		.btn-secondary-yazmi
+			margin-right: 0px
+.view_role
+	.modal-content 
+		.modal-body .row 
+			.actions_div, .access_div
+				ul
+					background: #ffffff
+					.form-check-input:disabled
+						opacity: 1
+		.uf-label
+			color: #000000
+		.uf-field-value
+			color: #666666
+.send_remender
+	.uf-single
+		.uf-field
+			.btn
+				font-family: $Segoe_UI
+				font-weight: normal
+				font-size: 14px
+				line-height: 19px
+				background: #FFC122
+				color: #000000
+		.uf-label
+			p
+				font-size: 9px
+	.radio-field-wrapper
+		flex: 5
+		width: auto
+		.container-radio
+			.checkmark-radio
+				&::after
+					background: #00643B
+
+
+
+.upload_yazmi
+	position: relative
+	button
+		position: absolute
+		left: 0
+.add_lesson_upload
+	width: auto !important
+	.bulk_upload_input
+		width: 96px
+		height: 40px
+		margin-right: 20px
+	.btn-primary-yazmi
+		height: 40px
+	.add_lesson_upload
+		.Edit_upload_input
+			height: 40px
+			width: 134px
+.upload_image
+	.uf-single 
+		margin-top: 0px !important
+.uploaded_button
+	display: flex
+	align-items: center
+	height: 40px
+	border: 1px solid #666666
+	border-radius: 6px
+	padding: 11px 15px
+	.uploaded_icon
+		display: flex
+		margin-right: 20px
+		span
+			margin-right: 9px
+	p
+		margin-bottom: 0px
+		font-family: $Segoe_UI_Bold
+		text-align: center
+		color: #666666
+	.cross_icon
+		cursor: pointer
+		margin-left: 23px
+		
+.react__tag_div
+	border: 1px solid #DFDFDF
+	border-radius: 5px
+	padding: 3px 4px
+	position: relative
+	.react-tags
+		display: flex
+		width: 100%
+		.react-tags__selected
+			.react-tags__selected-tag
+				border: 1px solid #00000021
+				border-radius: 3px
+				margin-right: 5px
+				padding: 2px
+				&:after
+					content: "\2715"
+					color: #aaa
+					margin-left: 8px
+				.react-tags__search-input
+					width: 100%
+					border: none
+	.react-tags__search-wrapper
+		input
+			width: 100% !important
+			border: none
+			font-family: Segoe_UI
+			font-style: normal
+			font-weight: normal
+			font-size: 14px
+			line-height: 19px
+			color: #666666
+	.react-tags__selected-tag-name
+		font-family: Segoe_UI
+			font-style: normal
+			font-weight: normal
+			font-size: 14px
+			line-height: 19px
+			color: #666666
+
+.manage-permissions-wrapper 
+	.uf-single 
+		.radio-field
+			flex: 0 0 100%
+			justify-content: space-between
+			.radio-field-wrapper
+				flex: 0 0 0
+
+.react-tags__suggestions
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+	// width: calc( 100% - 180px)
+	width: 100%
+	// display: flex
+	// flex-direction: column
+	// align-content: center
+	border-radius: 5px
+	z-index: 1111111111111
+	position: absolute
+	margin-top: 5px
+	// margin-left: -5px
+	z-index: 1000000000
+	background: #ffffff
+	left: 0
+	ul
+		margin-bottom: 0px
+		padding: 2px
+		li
+			width: 100%
+			font-family: $Segoe_UI
+			font-size: 14px
+			line-height: 19px
+			color: #666666
+			list-style: none
+			width: 100%
+			margin-bottom: 5px
+			margin-top: 5px
+			cursor: pointer
+// .is-active
+// 	background: yellow
+// 	ul
+// 		background: 
+// 		li
+// 			background: red !important
+
+// .is-focused
+// 	width: 100%
+
+// .react-tags__suggestion-prefix
+// 	background: yellow
+// 	ul
+// 		li
+// 			background: red !important
+
+
+// periview form 
+.perview_form
+	.uf-single
+		.after_added_questions
+			h3
+				font-family: $Segoe_UI
+				font-weight: 600
+				font-size: 14px
+				line-height: 15px
+				color: #252525
+				margin-bottom: 41px
+			.added_question
+				margin-bottom: 10px
+				.option_name
+					display: flex
+					align-items: center
+					.circle_icon
+						display: flex
+					p
+						font-family: $Segoe_UI
+						font-weight: normal
+						font-size: 12px
+						line-height: 16px
+						color: #000000
+						padding-left: 12px
+				&:last-child
+					margin-bottom: 0px
+	.submission_form
+		margin: 29px 0px
+.img_size_fix
+	max-width: 100px
+    height: 100px
+.video_size_fix
+	max-width: 200px
+.yazmi_browser
+	display: flex
+	justify-content: center
+	margin-bottom: 12px
+	.upload_yazmi_browser
+		width: 50px
+		position: relative
+		display: flex
+		// margin-left: auto
+		// margin-right: auto
+		font-weight: 700
+		cursor: pointer
+		input
+			cursor: pointer
+		p
+			position: absolute
+			top: 50%
+			left: 50%
+			cursor: pointer
+			transform: translate(-50%, -50%)
+	.btn-grey
+		display: flex
+		align-items: center
+		border: 1px solid #666666
+		border-radius: 6px
+		padding: 11px 15px
+		background: transparent
+		padding: 5px 5px
+		color: #000000
+		font-weight: 500
+		cursor: auto
+		img
+			width: 23px
+			height: 17px
+
+.manage_permission_modal
+	.modal-content
+		.modal-body
+			.manage-permissions-wrapper
+				.uf-label
+					margin-bottom: 15px
+					font-size: 14px
+				.row
+					width: 100%
+					margin-left: 0px
+					margin-right: 0px
+					// padding: 0px -10px
+					justify-content: space-between
+					.actions_div
+						width: 49%
+						padding: 0px 0px
+						ul
+							display: flex
+							align-items: center
+							margin-bottom: 10px
+							padding: 20px 10px
+							li
+								margin-bottom: 0px
+								margin-right: 10px
+								height: auto
+								&:last-child
+									margin-right: 0px
+								.checkbox_div
+									// display: flex
+									// align-items: center
+									.container-radio
+										padding: 2px 0 0 25px
+.download_list
+	.modal-dialog
+		width: 500px
+		.download_list_modal
+			padding: 0px !important
+			ul
+				padding-left: 0px
+				margin-bottom: 0px
+				margin-top: 20px
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				li
+					list-style: none
+					padding: 10px 25px
+					color: #ffffff
+					font-family: $Segoe_UI 
+					font-style: normal 
+					font-weight: 600 
+					font-size: 14px
+					cursor: pointer
+					background: #00643B
+					margin: 5px
+					border-radius: 6px
+					width: 60%
+					text-align: center
+					// &:hover
+					// 	background: #D9E8E2
+			.modal-form-cta
+				margin: 20px 25px
+				.btn-secondary-yazmi
+					display: flex
+					margin-left: auto
+					margin-right: 0px
+
+
+@media screen and ( min-width: 800px )
+	.create_new_role
+		.modal-dialog
+			max-width: 880px !important
+			min-width: 700px !important
+@media screen and ( min-width: 801px )
+	.manage_permission_modal
+		.modal-dialog
+			max-width: 800px !important
+			min-width: 700px !important
+@media screen and ( max-width: 550px )
+	.confirmModal .modal-dialog
+		min-width: 380px !important
+		max-width: 380px !important
+	.manage_profile_user
+		.modal-body
+			.uf-single
+				.uf-field
+					flex: 0 0 auto
+			
+					
+							

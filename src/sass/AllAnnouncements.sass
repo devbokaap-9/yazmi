@@ -1,0 +1,176 @@
+.main_message_div
+    margin-top: 21px
+    height: 70vh
+    overflow: auto
+    padding-top: 2px
+    padding-bottom: 2px
+    .row_1
+        display: flex
+        justify-content: space-between
+        margin-bottom: 13px
+        p
+            font-family: $Segoe_UI
+            font-size: 18px
+            line-height: 24px
+            color: #252525
+            margin-bottom: 0px
+    .row_2
+        display: flex
+        margin-top: 24px
+        .user_pic
+            display: flex
+            align-self: center
+            padding: 2px
+            flex-direction: column
+            width: 72px
+            img
+                border-radius: 50%
+                width: 50px
+                height: 50px
+                margin-left: auto
+                margin-right: auto
+            p
+                margin-top: 10px
+                font-family: $Segoe_UI
+                font-size: 10px
+                line-height: 18px
+                text-align: center
+                color: #000000
+        .inbox_div
+            margin-left: 11px
+            width: 491px
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.125)
+            border-radius: 5px
+            padding: 17px 13px
+            .text_div
+                display: flex
+                justify-content: space-between
+                span
+                    font-family: $Segoe_UI
+                    font-size: 13px
+                    line-height: 18px
+                    color: #666666
+                    width: 332px
+                p
+                    font-family: $Segoe_UI
+                    font-size: 13px
+                    line-height: 16px
+                    color: #252525
+                    margin-left: 20px
+            .attachment_div
+                display: flex
+                justify-content: space-between
+                margin-top: 26px
+                p
+                    font-family: $Segoe_UI
+                    font-size: 13px
+                    line-height: 16px
+                    color: #00643B
+                span
+                    font-family: $Segoe_UI
+                    font-size: 13px
+                    line-height: 16px
+                    color: #252525
+        &:nth-child(2)
+            margin-top: 0px
+    .left_row
+        display: flex
+        margin-top: 53px
+        justify-content: flex-end
+        .user_pic
+            display: flex
+            margin-top: 30px
+            padding: 2px
+            flex-direction: column
+            margin-left: 8px
+            width: 72px
+            img
+                border-radius: 50%
+                width: 50px
+                height: 50px
+                margin-left: auto
+                margin-right: auto
+            p
+                margin-top: 10px
+                font-family: $Segoe_UI
+                font-size: 13px
+                line-height: 18px
+                text-align: center
+                color: #000000
+        .inbox_div
+            margin-left: 11px
+            width: 564px
+            .sent_to
+                padding: 20px 23px
+                background: #D9E8E2
+                box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.125)
+                border-radius: 5px
+                .text_div
+                    display: flex
+                    justify-content: space-between
+                    span
+                        font-family: $Segoe_UI
+                        font-size: 13px
+                        line-height: 18px
+                        color: #666666
+                        width: 332px
+                    p
+                        font-family: $Segoe_UI
+                        font-size: 13px
+                        line-height: 16px
+                        color: #252525
+                        margin-left: 20px
+                .attachment_div
+                    display: flex
+                    justify-content: space-between
+                    margin-top: 84px
+                    p
+                        font-family: $Segoe_UI
+                        font-size: 13px
+                        line-height: 16px
+                        color: #00643B
+                    span
+                        font-family: $Segoe_UI
+                        font-size: 13px
+                        line-height: 16px
+                        color: #252525
+            .sent_location
+                padding-top: 11px
+                p
+                    text-align: end
+                    font-family: $Segoe_UI
+                    font-size: 12px
+                    line-height: 16px
+                    color: #666666
+.sent_announcement
+    .left_row
+        margin-top: 26px
+        &:nth-child(1)
+            margin-top: 12px
+.inbox_announcement
+    .row_2
+        &:nth-child(2)
+            margin-top: 24px
+@media screen and (max-width: 1100px)
+    .main_message_div 
+        .row_2 
+            .inbox_div 
+                width: 420px
+                .text_div
+                    span
+                        width: 290px
+        .left_row
+            .inbox_div
+                width: 488px
+            
+@media screen and (max-width: 1000px)
+    .main_message_div
+        .row_2
+            .inbox_div
+                width: 64%
+        .left_row
+            .inbox_div
+                width: 70%
+
+            
+        

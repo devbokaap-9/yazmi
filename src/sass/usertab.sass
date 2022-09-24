@@ -1,0 +1,103 @@
+.UserSidebar
+    ul
+        li
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 100%
+            justify-content: space-between 
+            .Link_text
+                text-decoration: none
+                height: 35px
+                width: 100%
+                .users_box
+                    height: 100%
+                    padding: 9px 19px
+                    justify-content: space-between
+                    p
+                        font-family: $Segoe_UI
+                        font-style: normal
+                        font-weight: 600
+                        font-size: 13px
+                        line-height: 17px
+                        color: #252525
+            .dropdown
+                // display: none
+                width: 100%
+                ul
+                    li
+                        height: 35px
+                        a
+                            color: $sidenavbar_color
+                            font-family: $Segoe_UI
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 12px
+                            line-height: 31px
+                            display: flex
+                            align-items: center
+                            padding-left: 30px
+                            padding-right: 19px
+                            span
+                                margin-right: 7px
+                            .three_dots
+                                margin-right: 0px
+                                margin-left: auto
+            a.users_box_active
+                background: $nav_bar_active
+                box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1) !important
+                    // .users_box
+                    //     .dropdown
+                    //         display: block
+                // .users_box_active_static
+                //     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1) !important
+            .bi-three-dots
+                color: $sidenavbar_color
+.translition_d_none
+    transition: height 2s
+    display: none
+.add_user,.own_user_form,.learning_popup
+    .popover-body
+        padding: 0px !important
+        border-radius: 4px 4px 0px 0px !important
+        border: none !important
+        overflow: hidden !important
+        width: 157px !important
+        ul
+            li
+                a
+                    color: #252525 !important
+                    font-family: $Segoe_UI !important
+                    font-style: normal !important
+                    font-weight: 600 !important
+                    font-size: 14px !important
+                    line-height: 40px !important
+                    padding: 0px 14px !important
+                &:hover
+                    background: #D9E8E2 !important
+    .bs-popover-auto
+        top: 9px !important
+        left: 113px !important
+    .squar_box
+        width: 10px
+        height: 10px
+        background: #ffffff
+        transform: rotate(46deg)
+        position: absolute
+        top: -6px
+        left: 18px
+        border-top: 1px solid rgba(0,0,0,.2)
+        border-left: 1px solid rgba(0,0,0,.2)
+.own_user_form
+    .bs-popover-auto
+        left: 57px !important
+
+.adduser_popup
+    background: #ffffff
+    border: 1px solid black
+    z-index: 6
+    position: absolute
+    top: 41%
+    right: 0
+    left: 179px
+    width: 200px

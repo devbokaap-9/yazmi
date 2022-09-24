@@ -1,0 +1,79 @@
+@import "./sass/Variable"
+@import "./sass/Header";
+@import "./sass/Sidebar"
+@import "./sass/usertab";
+@import "./sass/MainSection";
+@import "./sass/Modal";
+@import "./sass/Login";
+@import "./sass/Alluser";
+@import "./sass/DatatableList";
+@import "./sass/AddUsermodal";
+@import "./sass/Userview";
+@import "./sass/Rolebygroup";
+@import "./sass/Securityquestions";
+@import "./sass/AllAnnouncements";
+@import "./sass/FormCreate";
+@import "./sass/RateTeacher";
+@import "./sass/Responses";
+@import "./sass/Notownbyme";
+@import "./sass/Learning";
+@import "./sass/studentdashboard";
+@import "./sass/Student";
+@import "./sass/PracticeTestResult";
+@import "./sass/Extraclass";
+@import "./sass/DownloadForm";
+
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: "Segoe_UI" 
+  ::-webkit-scrollbar
+        width: 5px
+        background: $scroll_bg
+        border-radius: 25px
+        height: 5px
+  ::-webkit-scrollbar-thumb
+        background: $scroll_bg
+        border-radius: 25px
+        height: 5px
+
+  ::-webkit-scrollbar-track
+        background: #ffffff
+        border-radius: 25px
+        height: 10%
+
+.loader_div
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: #000000
+      opacity: 0.6
+      span
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+
+.download_bg_load
+      opacity: 0.922
+      z-index: 55555555555
+.unauthorize_page
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      height: calc( 100vh - 60px )
+      width: 100%
+      h2
+            font-size: 100px
+      p
+            font-size: 20px
+.justify_end
+      justify-content: end
+
+
+

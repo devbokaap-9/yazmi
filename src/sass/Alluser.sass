@@ -1,0 +1,154 @@
+.all_user 
+	width: 100%
+	height: 100%
+	.user_div 
+		padding: 6px 22px 10px 22px
+		box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+	.row_1 
+		margin-bottom: 6px
+		.left_user 
+			h3 
+				font-family: $Segoe_UI
+				font-weight: 600
+				font-size: 18px
+				line-height: 24px
+				margin-bottom: 5px
+			.count_para 
+				font-family: $Segoe_UI
+				font-style: normal
+				font-weight: normal
+				font-size: 12px
+				line-height: 16px
+				color: #252525
+				.after_css
+					font-size: 14px
+					padding: 0px 5px
+					color: #666666
+
+	.right_user ul li 
+		position: relative
+		font-size: 13px
+		color: #252525
+		font-family: $Segoe_UI
+		font-weight: 400
+		span:after 
+			content: ""
+			position: absolute
+			z-index: 1
+			width: 1px
+			background: #252525
+			display: block
+			top: 12%
+			right: 0%
+			height: 80%
+			opacity: 0.5
+		
+		&:first-child 
+			padding-left: 0px
+		
+		&:last-child 
+			padding-right: 0px
+	.right_user 
+		ul
+			li 
+				padding: 0px 15px 0px 19px
+			.btn
+				padding: 5px !important 
+	
+	.right_user ul .contain_none span:after 
+		content: inherit
+	.user_count 
+		.broadcast 
+			font-family: $Segoe_UI
+			font-style: normal
+			font-weight: normal
+			font-size: 13px
+			line-height: 16px
+			cursor: pointer
+	.delete_all
+		font-family: $Segoe_UI
+		font-style: normal
+		font-weight: normal
+		font-size: 13px
+		line-height: 16px
+		color: #252525
+		// margin-left: 36px
+		cursor: pointer
+		margin-top: 6px
+	.suspend_all
+		font-family: $Segoe_UI
+		font-style: normal
+		font-weight: normal
+		font-size: 13px
+		line-height: 16px
+		cursor: pointer
+		margin-top: 6px
+		margin-left: 36px
+	.bottom_section 
+		padding: 19px 14px 0px 14px
+		.breadcrumb
+			align-items: center
+			.breadcrumb-item
+				a
+					font-size: 13px
+					line-height: 17px
+					color: #666666
+			.active
+				font-size: 13px
+				line-height: 17px
+				color: #000000
+
+	.search_box 
+		width: 100%
+		border: 1px solid #BCBCBC
+		// padding: 11px 20px
+		border-radius: 5px
+		box-shadow: none
+		display: flex
+		align-items: center
+		input 
+			border: none
+			width: 95%
+			font-family: $Segoe_UI
+			font-style: normal
+			font-weight: normal
+			font-size: 14px
+			line-height: 19px
+			color: #666666
+			&:focus 
+				outline: none
+				box-shadow: none
+		.MuiPaper-elevation1 
+			box-shadow: none
+			width: 97%
+		button
+			display: none
+	.back_btn
+		display: none
+.error_msg
+	font-size: 13px
+	padding-top: 5px
+.breadcrumb-item+.breadcrumb-item
+	padding-left: 5px
+	&:before
+		padding-right: 5px
+		color: #6c757d
+		content: ">"
+		font-weight: 900
+@media screen and ( min-width: 1000px )
+	.all_user
+		.user_div 
+			padding: 6px 60px 10px 22px
+		.bottom_section 
+			padding: 19px 60px 0px 14px
+@media screen and ( max-width: 800px )
+	.all_user
+		.back_btn
+			display: block
+			text-align: left
+			padding-left: 17px
+			span
+				margin-right: 13px
+		
+
+

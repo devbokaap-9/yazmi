@@ -1,0 +1,100 @@
+.security_question
+    height: 100vh
+    position: relative
+    overflow: hidden
+    .security_question_div
+        height: 100%
+        .answer_div
+            width: 580px
+            height: 500px
+            z-index: 2
+            h3
+                text-align: center
+                font-family: $Segoe_UI_Bold
+                font-size: 24px
+                line-height: 32px
+                color: #252525
+            p
+                text-align: center
+                font-family: $Segoe_UI
+                font-size: 13px
+                line-height: 17px
+                text-align: center
+                color: #252525
+            .security_yazmi
+                height: 400px
+                overflow: auto
+                margin-top: 12px
+                .form-group
+                    position: relative
+                    width: 99%
+                    .btn-primary-yazmi
+                        margin-top: 37px
+                        font-weight: 500
+                        &:hover
+                            color: #ffffff
+                    .down_arrow
+                        position: absolute
+                        top: 31px
+                        right: 15px
+                .question_2, .question_3
+                    margin-top: 41px
+    .top_left
+        position: absolute
+        top: -119px
+        left: -23px
+    .top_right
+        position: absolute
+        top: 0
+        right: 0
+    .Left_bottom
+        position: absolute
+        bottom: 0
+        left: 0
+    .right_bottom
+        position: absolute
+        bottom: -151px
+        right: -112px
+@media screen and (max-width: 1000px)
+    .security_question
+        .security_question_div 
+            .answer_div
+                height: 600px
+                .security_yazmi
+                    height: 100%
+@media screen and (max-width: 1200px)
+        .top_left
+            width: 40%
+            img
+                width: 100%
+        .top_right
+            width: 48%
+            img
+                width: 100%
+        .Left_bottom
+            width: 20%
+            img
+                width: 100%
+        .right_bottom
+            width: 44%
+            img
+                width: 100%
+@media screen and (max-width: 1400px)
+    .security_question
+        .top_left
+            width: 30%
+            img
+                width: 100%
+        .top_right
+            width: 38%
+            img
+                width: 100%
+        .Left_bottom
+            width: 15%
+            img
+                width: 100%
+        .right_bottom
+            width: 34%
+            img
+                width: 100%
+

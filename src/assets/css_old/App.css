@@ -1,0 +1,29 @@
+/* @import url("./variable.css"); */
+/* @import url("./Header.css"); */
+/* @import url("./Sidebar.css"); */
+/* @import url('./Mainsection.css'); */
+/* @import url('./AllUser.css'); */
+/* @import url('./usertab.css'); */
+/* @import url('./DataTableList.css'); */
+/* @import url('./Login.css'); */
+/* @import url('./Modal.css'); */
+
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--Segoe_UI)
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background: var(--scroll_bg);
+    border-radius: 25px;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--scroll_clr);
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 25px;
+} */

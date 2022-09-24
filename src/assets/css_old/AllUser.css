@@ -1,0 +1,105 @@
+.all_user{
+    width: 100%;
+}
+.all_user .user_div{
+    padding: 6px 22px 10px 22px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.all_user .row_1 {
+    margin-bottom: 6px;
+}
+.all_user .row_1 .left_user h3{
+    font-family: "Segoe_UI";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+.all_user .right_user ul li{
+    position: relative;
+    font-size: 13px;
+    color: #252525;
+    font-family: "Segoe_UI";
+    font-weight: 400;
+}
+.all_user .right_user ul li{
+    padding: 0px 15px 0px 19px;
+}
+.all_user .right_user ul li span:after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 1px;
+    background: #252525;
+    display: block;
+    top: 12%;
+    right: 0%;
+    height: 80%;
+    opacity: 0.5;
+}
+.all_user .right_user ul .contain_none span:after{
+    content: inherit;
+}
+.all_user .right_user ul li:first-child{
+    padding-left: 0px;
+}
+.all_user .right_user ul li:last-child{
+    padding-right: 0px;
+}
+.all_user .user_count .count_para {
+    font-family: "Segoe_UI";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #252525;
+}
+.all_user .user_count .broadcast{
+    font-family: "Segoe_UI";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    cursor: pointer;
+}
+.all_user .bottom_section{
+    padding: 19px 14px 0px 14px;
+}
+.all_user .search_box{
+    width: 100%;
+    border: 1px solid #BCBCBC;
+    padding: 11px 20px;
+    border-radius: 5px;
+}
+.all_user .search_box input{
+    border: none;
+    width: 95%;
+    font-family: "Segoe_UI";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #666666;
+}
+.all_user .search_box input:focus{
+    outline: none;
+    box-shadow: none;
+}
+.MuiToolbar-gutters{
+    display: none;
+}
+.MuiToolbar-regular{
+    min-height: 0px !important;
+    display: none !important;
+}
+.MuiTableHead-root{
+    background: #00643B !important; 
+}
+table{
+    border-radius: 6px !important;
+}
+thead tr th span{
+    color: #ffffff !important;
+}
+thead tr th {
+    color: #ffffff !important;
+}
